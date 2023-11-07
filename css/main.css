@@ -6,6 +6,7 @@
   --light-color: #fff;
   --dark-color: #000000;
   --shamp-color: #D2B589;
+  --gold-color: #C78853;
   --gray-color: #E8E5E0;
   --matt-color: #ffffff64;
   --gradient: linear-gradient(244deg, #C78853 33.49%, #D5BDA1 49.48%, #D9D9D9 53.82%, #EFE5D6 56.56%, #D2B589 77.34%);
@@ -56,6 +57,13 @@
   font-family: "TT Norms Pro";
   src: url("../fonts/../fonts/TTNormsPro-Bold.woff2") format("woff2");
   font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kudryashev Headline";
+  src: url("../fonts/../fonts/KudryashevHeadline-Sans.woff2") format("woff2");
+  font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
@@ -169,6 +177,16 @@ a {
   width: 100%;
 }
 
+.btn {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+  color: var(--dark-color);
+  background-image: linear-gradient(244deg, #C78853 33.49%, #D5BDA1 49.48%, #D9D9D9 53.82%, #EFE5D6 56.56%, #D2B589 77.34%);
+}
+
 .phone-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -267,19 +285,9 @@ a {
   background-position: left center;
 }
 
-.btn {
-  padding: 10px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  border-radius: 10px;
-  color: var(--dark-color);
-  background-image: linear-gradient(244deg, #C78853 33.49%, #D5BDA1 49.48%, #D9D9D9 53.82%, #EFE5D6 56.56%, #D2B589 77.34%);
-}
-
 .hero {
   height: 100vh;
-  background-image: url("../img/hero_2x.jpg");
+  background-image: url("../img/hero_2x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -327,6 +335,7 @@ a {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   font-family: Kudryashev Headline;
+  text-transform: uppercase;
   font-size: 80px;
   font-weight: 400;
   line-height: 77px;
@@ -354,7 +363,8 @@ a {
   flex-direction: column;
   height: 100%;
   background-color: var(--shamp-color);
-  border-radius: 0 0 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
 }
 .stock-card__content {
   display: -webkit-box;
@@ -388,5 +398,203 @@ a {
   line-height: 24px;
   text-transform: uppercase;
   color: #b86f4c;
+}
+
+.about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--gray-color);
+}
+.about__title {
+  margin: 0;
+  margin-bottom: 44px;
+  color: var(--dark-color);
+  text-align: center;
+  font-family: Kudryashev Headline;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 77px;
+  text-transform: uppercase;
+}
+.about__content-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 21px;
+  padding-bottom: 60px;
+}
+.about__content-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.about__content-right {
+  position: relative;
+}
+.about__img--big {
+  justify-self: flex-end;
+}
+.about__img--small {
+  position: absolute;
+  left: -132px;
+  top: 190px;
+}
+.about__text {
+  margin: 0;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  width: 36%;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--dark-color);
+}
+.about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+}
+.about__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  min-width: 166px;
+}
+.about__item:not(:last-child) {
+  margin-right: 34px;
+}
+.about__amount {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: Kudryashev Headline;
+  font-size: 64px;
+  font-weight: 400;
+  color: var(--gold-color);
+  border-bottom: 1px solid var(--gold-color);
+}
+.about__desct {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  max-width: 166px;
+}
+
+.doctors {
+  background-color: var(--gray-color);
+}
+.doctors__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.doctors__title {
+  margin: 0;
+  margin-bottom: 70px;
+  text-align: center;
+  font-family: Kudryashev Headline;
+  font-size: 80px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.doctors__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  gap: 32px;
+}
+.doctors__item {
+  -ms-grid-column-span: 4;
+  grid-column: 4 span;
+  width: 100%;
+}
+.doctors__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  min-width: 240px;
+  border-radius: 20px;
+  border: 1px solid var(--shamp-color);
+}
+.doctors__img {
+  margin-bottom: 16px;
+  border-radius: 20px;
+}
+.doctors__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.doctors__name {
+  margin: 0;
+  margin-bottom: 24px;
+  color: var(--, #000);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.doctors__descr {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.doctors__btn {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+  padding-right: 26px;
 }
 /*# sourceMappingURL=main.css.map */
