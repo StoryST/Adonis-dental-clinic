@@ -1,0 +1,21 @@
+.phone-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.phone-list__item:not(:last-child) {
+  margin-right: 23px;
+}
+.phone-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--shamp-color);
+}
+.phone-list__svg {
+  margin-right: 25px;
+}
+/*# sourceMappingURL=phone-list.css.map */
