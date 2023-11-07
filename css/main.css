@@ -85,10 +85,7 @@ html {
 }
 
 img {
-  height: auto;
-  max-width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  border-style: none;
 }
 
 a {
@@ -310,5 +307,86 @@ a {
   font-weight: 400;
   text-transform: uppercase;
   color: #645539;
+}
+
+.stock {
+  background-color: var(--gray-color);
+}
+.stock__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.stock__title {
+  margin: 0;
+  text-align: center;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-family: Kudryashev Headline;
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 77px;
+  color: var(--dark-color);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.stock__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 2/10 span;
+}
+.stock__item:not(:last-child) {
+  margin-right: 30px;
+}
+.stock-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--shamp-color);
+  border-radius: 0 0 10px 10px;
+}
+.stock-card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 100%;
+  padding: 10px;
+}
+.stock-card__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--dark-color);
+  text-transform: uppercase;
+}
+.stock-card__price {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #b86f4c;
 }
 /*# sourceMappingURL=main.css.map */
