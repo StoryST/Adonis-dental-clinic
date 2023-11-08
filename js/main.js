@@ -173,15 +173,20 @@ closeBtn.addEventListener('click', () => {
 ymaps.ready(init);
 function init() {
   var myMap = new ymaps.Map('map', {
-    center: [55.75992907, 37.60499448],
-    zoom: 13,
+    center: [57.129495, 65.488868],
+    zoom: 15,
     controls: []
   });
-  var myPlacemark = new ymaps.Placemark([55.76946510, 37.63895337], {}, {
-    // iconLayout: 'default#image',
-    // iconImageHref: './img/map-point.svg',
-    // iconImageSize: [12, 12],
+  var myPlacemark = new ymaps.Placemark([57.129494, 65.498862], {}, {
+    iconLayout: 'default#image',
+    iconImageHref: './img/location-map.svg',
+    iconImageSize: [50, 50]
   });
+  myRectangle = new ymaps.Rectangle([[0, 0], [70, 179]], {}, {
+    fillColor: '#D2B58966',
+    fillOpacity: 1
+  });
+  myMap.geoObjects.add(myRectangle);
   myMap.geoObjects.add(myPlacemark);
 }
 ;
