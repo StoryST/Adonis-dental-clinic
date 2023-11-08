@@ -25,7 +25,7 @@
     <header class="header">
   <div class="container-fluid header__container-fluid--top">
     <div class="container header__container--top">
-      <p class="header__location">
+      <p class="header__location location">
         г. Тюмень, ул. Московский тракт, д.&nbsp;83&nbsp;корпус&nbsp;1, помещение&nbsp;5
       </p>
       <ul class="list-reset header__list-top phone-list">
@@ -354,20 +354,219 @@
       <section class="request">
   <div class="container request__container">
     <h2 class="request__title">Оставьте заявку</h2>
-    <p class="request__descr">Мы&nbsp;вам обязательно перезвоним и&nbsp;проконсультируем по&nbsp;всем интересующим вопросам</p>
+    <p class="request__descr">Мы&nbsp;вам обязательно перезвоним и&nbsp;проконсультируем по&nbsp;всем интересующим
+      вопросам</p>
     <form action="#" class="form">
       <label class="form__label">
-        <input type="text" name="Имя" class="input-reset form__input" placeholder="Имя">
+        <input type="text" name="Имя" class="input-reset form__input" placeholder="Давйте знакомиться">
       </label>
       <label class="form__label">
-        <input type="text" name="Имя" class="input-reset form__input" placeholder="Имя">
+        <input type="tel" name="Телефон" class="input-reset form__input" placeholder="Ваш номер">
       </label>
-      <label class="form__label">
+      <button class="btn-reset form__btn btn">Отправить</button>
+      <!-- <label class="form__label">
         Я соглашаюсь с политикой конфиденциальности
-        <input type="checkbox" name="Имя" class="input-reset form__input" placeholder="Имя">
+        <input type="checkbox" name="Имя" class="input-reset form__checkbox" placeholder="Имя">
+      </label> -->
+
+      <label class="request__form-label request__form-label-checkbox form__label custom-check">
+        <input class="request__form-check custom-check__input" id="request-main-form" type="checkbox"
+          name="Политика комфиденциальности" required aria-label="Согласиться с политикой конфиденциальности">
+        <span class="custom-check__checkbox"></span>
+        Я соглашаюсь с
+        <a href="#" class="form__link">политикой конфиденциальности</a>
       </label>
-      <button class="btn-reset form__btn">Отправить</button>
     </form>
+  </div>
+</section>
+
+
+      <!-- <section class="contacts">
+  <div class="container contacts__container">
+    <h2 class="contacts__title">Контакты</h2>
+    <div class="contacts__content"> -->
+<!-- <div class="contacts__map" id="map"> -->
+
+<!-- <div class="contacts__map" style="width: 450px; height: 450px;"  id="map"> -->
+<!-- <div class="contacts__location" id="contacts__location">
+          <button class="contacts__close-btn btn btn-reset" id="contacts-close" aria-label="Скрыть адрес"> -->
+<!-- <svg class="close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+              fill="none">
+              <circle cx="10" cy="10" r="10" fill="#999999" />
+              <rect x="6.20715" y="5.5" width="12" height="1" transform="rotate(45 6.20715 5.5)" fill="white" />
+              <rect x="5.59143" y="13.9854" width="12" height="1" transform="rotate(-45 5.59143 13.9854)"
+                fill="white" />
+            </svg> -->
+<!-- </button>
+          <h3 class="contacts__org"></h3>
+          <span class="contacts__adress">107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис
+            № 82</span>
+          <a href="tel:+78000001122" class="phone contacts__phone">
+            <svg class="contacts__phone-svg phone__svg">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>+7 495 424-23-532</a>
+        </div> -->
+<!-- </div> -->
+
+<!--
+      <div class="contacts__content">
+        <div class="contacts__map" id="map">
+          <div class="contacts__location" id="contacts__location">
+            <button class="contacts__close-btn btn-reset" id="contacts-close" aria-label="Скрыть адрес">
+              <svg class="close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                fill="none">
+                <circle cx="10" cy="10" r="10" fill="#999999" />
+                <rect x="6.20715" y="5.5" width="12" height="1" transform="rotate(45 6.20715 5.5)" fill="white" />
+                <rect x="5.59143" y="13.9854" width="12" height="1" transform="rotate(-45 5.59143 13.9854)"
+                  fill="white" />
+              </svg>
+            </button>
+            <h3 class="contacts__org">Студия «High pass»</h3>
+            <span class="contacts__adress">107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис
+              № 82</span>
+            <a href="tel:+78000001122" class="phone contacts__phone">
+              <svg class="contacts__phone-svg phone__svg">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>+7 495 424-23-532</a>
+          </div>
+        </div>
+        <div class="contacts__request">
+          <h3 class="contacts__subtitle">Оставить заявку</h3>
+          <p class="contacts__descr">Оставьте ваши данные, указав в графе «Комментарий» желаемые время и дату съёмки
+            или другого мероприятия</p>
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form contacts__form"
+            id="contacts__form">
+            <label class="form__label contacts__label">
+              <input type="text" name="Имя" class="input-reset form__input contacts__input input-name" placeholder="Имя">
+            </label>
+            <label class="form__label contacts__label">
+              <input type="email" name="E-mail" class="input-reset form__input contacts__input input-email"
+                placeholder="E-mail">
+            </label>
+            <label class="form__label contacts__label contacts__label-comment">
+              <textarea class="input-reset form__input form__input-comment contacts__input contacts__input-comment"
+                name="descript" cols="30" rows="10" placeholder="Коментарий" class="about__form-textarea about-form-style"
+                aria-label="Коментарий"></textarea>
+            </label>
+            <button class="btn-reset btn form__btn contacts__form-btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<section class="contacts section-offset" id="contacts">
+  <div class="container contacts__container">
+    <h2 class="contacts__title section-title">Контакты</h2>
+    <div class="contacts__content">
+      <div class="contacts__map" id="map">
+        <div class="contacts__location" id="contacts__location">
+          <button class="contacts__close-btn btn-reset" id="contacts-close" aria-label="Скрыть адрес">
+            <svg class="close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+              fill="none">
+              <circle cx="10" cy="10" r="10" fill="#D2B589" />
+              <rect x="6.20715" y="5.5" width="12" height="1" transform="rotate(45 6.20715 5.5)" fill="#000000" />
+              <rect x="5.59143" y="13.9854" width="12" height="1" transform="rotate(-45 5.59143 13.9854)"
+                fill="#000000" />
+            </svg>
+          </button>
+          <img class="contacts__svg" src="img/logo-contacts.svg" alt="Логотип всеми любимой стоматологии">
+          <p class="location contacts__adress">
+            г. Тюмень, ул. Московский тракт, д.&nbsp;83&nbsp;корпус&nbsp;1, помещение&nbsp;5
+          </p>
+          <ul class="contacts__phone-list list-reset phone-list">
+            <li class="contacts__phone-item phone-list__item">
+              <a href="tel:+73452681848" class="phone-list__link">
+                <svg class="phone-list__svg" width="20" height="20" viewBox="0 0 25 25" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="25" height="25" fill="url(#pattern4)" />
+                  <defs>
+                    <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_184_389" transform="scale(0.01)" />
+                    </pattern>
+                    <image id="image0_184_389" width="100" height="100"
+                      xlink:href="data:image/png;base64,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" />
+                  </defs>
+                </svg>
+                +7 (3452) 68-18-48
+              </a>
+            </li>
+            <li class="contacts__phone-item phone-list__item">
+              <a href="tel:+79199412144" class="phone-list__link">
+                <svg class="phone-list__svg" width="20" height="20" viewBox="0 0 25 25" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="25" height="25" fill="url(#pattern4)" />
+                  <defs>
+                    <pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_184_389" transform="scale(0.01)" />
+                    </pattern>
+                    <image id="image0_184_389" width="100" height="100"
+                      xlink:href="data:image/png;base64,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" />
+                  </defs>
+                </svg>
+                +7 919-941-21-44
+              </a>
+            </li>
+          </ul>
+          <span class="contacts__time">
+            Пн-Пт: 9.00&nbsp;&mdash; 20.00&nbsp;ч.
+          </span>
+            <span class="contacts__time">
+            Сб: 9.00&nbsp;&mdash; 15.00&nbsp;ч.
+          </span>
+          <span class="contacts__time contacts__time--last">
+            Вс: выходной
+          </span>
+          <ul class="contacts__social-list list-reset social-list">
+            <li class="social-list__item">
+              <a href=" https://t.me/+79199412144" target="_blank" aria-label="Telegram">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="25" height="25" fill="url(#pattern1)" />
+                  <defs>
+                    <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_184_394" transform="scale(0.01)" />
+                    </pattern>
+                    <image id="image0_184_394" width="100" height="100"
+                      xlink:href="data:image/png;base64,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" />
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="https://viber.click/79199412144" target="_blank" aria-label="Viber">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="25" height="25" fill="url(#pattern2)" />
+                  <defs>
+                    <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_184_393" transform="scale(0.01)" />
+                    </pattern>
+                    <image id="image0_184_393" width="100" height="100"
+                      xlink:href="data:image/png;base64,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" />
+                  </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="#" target="_blank" aria-label="Вконтакте">
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect width="25" height="25" fill="url(#pattern3)" />
+                  <defs>
+                    <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_184_392" transform="scale(0.01)" />
+                    </pattern>
+                    <image id="image0_184_392" width="100" height="100"
+                      xlink:href="data:image/png;base64,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" />
+                  </defs>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -379,6 +578,10 @@
 
     
   </div>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ae73e794-dbef-464f-8bd5-62f6e0e2bb34&lang=ru_RU" type="text/javascript">
+  </script>
+  <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5658f52d0ffe6a04b57088f9d75d12c4d7e637e4ee633f45d3e1d3b4276b1ac3&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script> -->
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script> -->
 </body>
 
 </html>

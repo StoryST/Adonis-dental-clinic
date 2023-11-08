@@ -5,9 +5,16 @@
 /*!*******************************!*\
   !*** ./src/js/_components.js ***!
   \*******************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-console.log('components');
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_ya_map__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/ya-map */ "./src/js/components/ya-map.js");
+/* harmony import */ var _components_ya_map__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_ya_map__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_hide_location__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/hide-location */ "./src/js/components/hide-location.js");
+/* harmony import */ var _components_hide_location__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_hide_location__WEBPACK_IMPORTED_MODULE_1__);
+
+
 
 /***/ }),
 
@@ -140,6 +147,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor/focus-visible.js */ "./src/js/vendor/focus-visible.js");
 /* harmony import */ var _vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_vendor_focus_visible_js__WEBPACK_IMPORTED_MODULE_0__);
 
+
+/***/ }),
+
+/***/ "./src/js/components/hide-location.js":
+/*!********************************************!*\
+  !*** ./src/js/components/hide-location.js ***!
+  \********************************************/
+/***/ (() => {
+
+const closeBtn = document.getElementById('contacts-close');
+const panel = document.getElementById('contacts__location');
+closeBtn.addEventListener('click', () => {
+  panel.classList.add('hide-animation');
+});
+
+/***/ }),
+
+/***/ "./src/js/components/ya-map.js":
+/*!*************************************!*\
+  !*** ./src/js/components/ya-map.js ***!
+  \*************************************/
+/***/ (() => {
+
+ymaps.ready(init);
+function init() {
+  var myMap = new ymaps.Map('map', {
+    center: [55.75992907, 37.60499448],
+    zoom: 13,
+    controls: []
+  });
+  var myPlacemark = new ymaps.Placemark([55.76946510, 37.63895337], {}, {
+    // iconLayout: 'default#image',
+    // iconImageHref: './img/map-point.svg',
+    // iconImageSize: [12, 12],
+  });
+  myMap.geoObjects.add(myPlacemark);
+}
+;
 
 /***/ }),
 
@@ -539,7 +584,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vars__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_vars */ "./src/js/_vars.js");
 /* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_functions */ "./src/js/_functions.js");
 /* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./_components */ "./src/js/_components.js");
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
