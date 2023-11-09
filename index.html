@@ -30,7 +30,7 @@
       </p>
       <ul class="list-reset header__list-top phone-list">
         <li class="phone-list__item">
-          <a href="tel:+73452681848" class="phone-list__link">
+          <a href="tel:+73452681848" class="phone-list__link link--gold">
             <svg class="phone-list__svg" width="20" height="20" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="25" height="25" fill="url(#pattern4)"/>
               <defs>
@@ -44,7 +44,7 @@
           </a>
         </li>
         <li class="phone-list__item">
-          <a href="tel:+79199412144" class="phone-list__link">
+          <a href="tel:+79199412144" class="phone-list__link link--gold">
             <svg class="phone-list__svg" width="20" height="20" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="25" height="25" fill="url(#pattern4)"/>
               <defs>
@@ -60,7 +60,7 @@
       </ul>
       <ul class="header__list list-reset social-list">
         <li class="social-list__item">
-          <a href=" https://t.me/+79199412144" target="_blank" aria-label="Telegram">
+          <a href=" https://t.me/+79199412144" class="social-list__link link--gold" target="_blank" aria-label="Telegram">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="25" height="25" fill="url(#pattern1)" />
@@ -75,7 +75,7 @@
           </a>
         </li>
         <li class="social-list__item">
-          <a href="https://viber.click/79199412144" target="_blank" aria-label="Viber">
+          <a href="https://viber.click/79199412144" class="social-list__link link--gold" target="_blank" aria-label="Viber">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="25" height="25" fill="url(#pattern2)" />
@@ -90,7 +90,7 @@
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#" target="_blank" aria-label="Вконтакте">
+          <a href="#" class="social-list__link link--gold" target="_blank" aria-label="Вконтакте">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="25" height="25" fill="url(#pattern3)" />
@@ -114,33 +114,31 @@
       </a>
       <nav class="nav header__nav" title="Главное меню">
         <ul class="list-reset nav__list header__nav-list">
-          <li class="nav__item header__nav-item"><a href="#" class="nav__link header__nav-link">Акции</a></li>
-          <li class="nav__item header__nav-item"><a href="#" class="nav__link header__nav-link">О клинике</a></li>
-          <li class="nav__item header__nav-item"><a href="#" class="nav__link header__nav-link">Услуги</a></li>
-          <li class="nav__item header__nav-item"><a href="#" class="nav__link header__nav-link">Врачи</a></li>
-          <li class="nav__item header__nav-item"><a href="#" class="nav__link header__nav-link">Контакты </a></li>
-          <li class="nav__item header__nav-item"><a href="#" class="nav__link header__nav-link">Отзывы</a></li>
+          <li class="nav__item header__nav-item"><a href="#stock" class="nav__link header__nav-link link">Акции</a></li>
+          <li class="nav__item header__nav-item"><a href="#about" class="nav__link header__nav-link link">О клинике</a></li>
+          <li class="nav__item header__nav-item"><a href="#services" class="nav__link header__nav-link link">Услуги</a></li>
+          <li class="nav__item header__nav-item"><a href="#doctors" class="nav__link header__nav-link link">Врачи</a></li>
+          <li class="nav__item header__nav-item"><a href="#contacts" class="nav__link header__nav-link link">Контакты </a></li>
+          <li class="nav__item header__nav-item"><a href="#reviews" class="nav__link header__nav-link link">Отзывы</a></li>
         </ul>
       </nav>
-      <a href="#form" class="header__link btn">Перезвоните мне</a>
+      <a href="#request" class="header__link btn">Перезвоните мне</a>
     </div>
   </div>
 </header>
 
     <main class="main">
-      <section class="hero">
-  <!-- <div class="container-fluid hero__container-fluid"> -->
+      <section class="hero" id="hero">
 <div class="container hero__container">
   <h1 class="hero__title visually-hidden">Адонис, стоматологическая клиника. Имплантация, протезирование, лечение</h1>
-  <img src="img/adonis-hero.svg" alt="Наш логотип">
+  <img src="img/adonis-hero.svg" width="680" height="164" alt="Наш логотип">
   <h2 class="hero__subtitle">
     Имплантация, протезирование, лечение
   </h2>
 </div>
-  <!-- </div> -->
 </section>
 
-      <section class="stock">
+      <section class="stock" id="stock">
   <div class="container stock__container">
     <h2 class="stock__title">Акции</h2>
     <ul class="stock__list list-reset">
@@ -184,7 +182,7 @@
   </div>
 </section>
 
-      <section class="about">
+      <section class="about" id="about">
   <div class="container about__container">
     <h3 class="about__title">О клинике</h3>
     <div class="about__content-top">
@@ -234,23 +232,23 @@
   </div>
 </section>
 
-      <section class="doctors">
+      <section class="doctors" id="doctors">
   <div class="doctors__container container">
     <h2 class="doctors__title">Наши врачи</h2>
     <ul class="doctors__list list-reset">
       <li class="doctors__item">
         <article class="doctors__card">
           <picture>
-            <source srcset="img/doctor-1.webp, img/doctor-1_2x.webp 2x" type="image/webp">
-            <img loading="lazy" src="img/doctor-1.jpg" srcset="img/doctor-1_2x.jpg 2x" class="image doctors__img"
-              width="236" height="275" alt="Фотография Васильева Адониса Альбертовича">
+            <source srcset="img/doctor-5.webp, img/doctor-5_2x.webp 2x" type="image/webp">
+            <img loading="lazy" src="img/doctor-5.jpg" srcset="img/doctor-5_2x.jpg 2x" class="image doctors__img"
+              width="281" height="398" alt="Фотография Алиева Умалата Джамаловича">
           </picture>
           <div class="doctors__content">
             <h3 class="doctors__name">
-              Васильев Адонис Альбертович
+              Алиев Умалат Джамалович
             </h3>
             <div class="doctors__descr">
-              Стоматолог&nbsp;&mdash; терапевт ортопед
+              Стоматолог&nbsp;&mdash; терапевт
             </div>
             <button class="doctors__btn btn btn-reset">Подробнее</button>
           </div>
@@ -261,7 +259,7 @@
           <picture>
             <source srcset="img/doctor-2.webp, img/doctor-2_2x.webp 2x" type="image/webp">
             <img loading="lazy" src="img/doctor-2.jpg" srcset="img/doctor-2_2x.jpg 2x" class="image doctors__img"
-              width="236" height="275" alt="Фотография Васильевой Агафьи Важаевны">
+              width="281" height="398" alt="Фотография Васильевой Агафьи Важаевны">
           </picture>
           <div class="doctors__content">
             <h3 class="doctors__name">
@@ -279,7 +277,7 @@
           <picture>
             <source srcset="img/doctor-3.webp, img/doctor-3_2x.webp 2x" type="image/webp">
             <img loading="lazy" src="img/doctor-3.jpg" srcset="img/doctor-3_2x.jpg 2x" class="image doctors__img"
-              width="236" height="275" alt="Фотография Казанатова Юсупа Магометрасуловича">
+              width="281" height="398" alt="Фотография Казанатова Юсупа Магометрасуловича">
           </picture>
           <div class="doctors__content">
             <h3 class="doctors__name">
@@ -297,7 +295,7 @@
           <picture>
             <source srcset="img/doctor-4.webp, img/doctor-4_2x.webp 2x" type="image/webp">
             <img loading="lazy" src="img/doctor-4.jpg" srcset="img/doctor-4_2x.jpg 2x" class="image doctors__img"
-              width="236" height="275" alt="Фотография Найманова Рустама Султанбиевича">
+              width="281" height="398" alt="Фотография Найманова Рустама Султанбиевича">
           </picture>
           <div class="doctors__content">
             <h3 class="doctors__name">
@@ -313,16 +311,16 @@
       <li class="doctors__item">
         <article class="doctors__card">
           <picture>
-            <source srcset="img/doctor-5.webp, img/doctor-5_2x.webp 2x" type="image/webp">
-            <img loading="lazy" src="img/doctor-5.jpg" srcset="img/doctor-5_2x.jpg 2x" class="image doctors__img"
-              width="236" height="275" alt="Фотография Алиева Умалата Джамаловича">
+            <source srcset="img/doctor-1.webp, img/doctor-1_2x.webp 2x" type="image/webp">
+            <img loading="lazy" src="img/doctor-1.jpg" srcset="img/doctor-1_2x.jpg 2x" class="image doctors__img"
+              width="281" height="398" alt="Фотография Васильева Адониса Альбертовича">
           </picture>
           <div class="doctors__content">
             <h3 class="doctors__name">
-              Алиев Умалат Джамалович
+              Васильев Адонис Альбертович
             </h3>
             <div class="doctors__descr">
-              Стоматолог&nbsp;&mdash; терапевт
+              Стоматолог&nbsp;&mdash; терапевт ортопед
             </div>
             <button class="doctors__btn btn btn-reset">Подробнее</button>
           </div>
@@ -333,7 +331,7 @@
           <picture>
             <source srcset="img/doctor-6.webp, img/doctor-6_2x.webp 2x" type="image/webp">
             <img loading="lazy" src="img/doctor-6.jpg" srcset="img/doctor-6_2x.jpg 2x" class="image doctors__img"
-              width="236" height="275" alt="Фотография Петросяна Альберта Вардановича">
+              width="281" height="398" alt="Фотография Петросяна Альберта Вардановича">
           </picture>
           <div class="doctors__content">
             <h3 class="doctors__name">
@@ -349,9 +347,9 @@
     </ul>
   </div>
 </section>
-<!-- width="236" height="275" -->
+<!-- width="281" height="398" -->
 
-      <section class="request">
+      <section class="request" id="request">
   <div class="container request__container">
     <h2 class="request__title">Оставьте заявку</h2>
     <p class="request__descr">Мы&nbsp;вам обязательно перезвоним и&nbsp;проконсультируем по&nbsp;всем интересующим
@@ -364,11 +362,6 @@
         <input type="tel" name="Телефон" class="input-reset form__input" placeholder="Ваш номер">
       </label>
       <button class="btn-reset form__btn btn">Отправить</button>
-      <!-- <label class="form__label">
-        Я соглашаюсь с политикой конфиденциальности
-        <input type="checkbox" name="Имя" class="input-reset form__checkbox" placeholder="Имя">
-      </label> -->
-
       <label class="request__form-label request__form-label-checkbox form__label custom-check">
         <input class="request__form-check custom-check__input" id="request-main-form" type="checkbox"
           name="Политика комфиденциальности" required aria-label="Согласиться с политикой конфиденциальности">
@@ -381,81 +374,7 @@
 </section>
 
 
-      <!-- <section class="contacts">
-  <div class="container contacts__container">
-    <h2 class="contacts__title">Контакты</h2>
-    <div class="contacts__content"> -->
-<!-- <div class="contacts__map" id="map"> -->
-
-<!-- <div class="contacts__map" style="width: 450px; height: 450px;"  id="map"> -->
-<!-- <div class="contacts__location" id="contacts__location">
-          <button class="contacts__close-btn btn btn-reset" id="contacts-close" aria-label="Скрыть адрес"> -->
-<!-- <svg class="close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-              fill="none">
-              <circle cx="10" cy="10" r="10" fill="#999999" />
-              <rect x="6.20715" y="5.5" width="12" height="1" transform="rotate(45 6.20715 5.5)" fill="white" />
-              <rect x="5.59143" y="13.9854" width="12" height="1" transform="rotate(-45 5.59143 13.9854)"
-                fill="white" />
-            </svg> -->
-<!-- </button>
-          <h3 class="contacts__org"></h3>
-          <span class="contacts__adress">107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис
-            № 82</span>
-          <a href="tel:+78000001122" class="phone contacts__phone">
-            <svg class="contacts__phone-svg phone__svg">
-              <use xlink:href="img/sprite.svg#phone"></use>
-            </svg>+7 495 424-23-532</a>
-        </div> -->
-<!-- </div> -->
-
-<!--
-      <div class="contacts__content">
-        <div class="contacts__map" id="map">
-          <div class="contacts__location" id="contacts__location">
-            <button class="contacts__close-btn btn-reset" id="contacts-close" aria-label="Скрыть адрес">
-              <svg class="close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                fill="none">
-                <circle cx="10" cy="10" r="10" fill="#999999" />
-                <rect x="6.20715" y="5.5" width="12" height="1" transform="rotate(45 6.20715 5.5)" fill="white" />
-                <rect x="5.59143" y="13.9854" width="12" height="1" transform="rotate(-45 5.59143 13.9854)"
-                  fill="white" />
-              </svg>
-            </button>
-            <h3 class="contacts__org">Студия «High pass»</h3>
-            <span class="contacts__adress">107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8, офис
-              № 82</span>
-            <a href="tel:+78000001122" class="phone contacts__phone">
-              <svg class="contacts__phone-svg phone__svg">
-                <use xlink:href="img/sprite.svg#phone"></use>
-              </svg>+7 495 424-23-532</a>
-          </div>
-        </div>
-        <div class="contacts__request">
-          <h3 class="contacts__subtitle">Оставить заявку</h3>
-          <p class="contacts__descr">Оставьте ваши данные, указав в графе «Комментарий» желаемые время и дату съёмки
-            или другого мероприятия</p>
-          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="form contacts__form"
-            id="contacts__form">
-            <label class="form__label contacts__label">
-              <input type="text" name="Имя" class="input-reset form__input contacts__input input-name" placeholder="Имя">
-            </label>
-            <label class="form__label contacts__label">
-              <input type="email" name="E-mail" class="input-reset form__input contacts__input input-email"
-                placeholder="E-mail">
-            </label>
-            <label class="form__label contacts__label contacts__label-comment">
-              <textarea class="input-reset form__input form__input-comment contacts__input contacts__input-comment"
-                name="descript" cols="30" rows="10" placeholder="Коментарий" class="about__form-textarea about-form-style"
-                aria-label="Коментарий"></textarea>
-            </label>
-            <button class="btn-reset btn form__btn contacts__form-btn">Отправить</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<section class="contacts section-offset" id="contacts">
+      <section class="contacts section-offset" id="contacts">
   <div class="container contacts__container">
     <h2 class="contacts__title section-title">Контакты</h2>
     <div class="contacts__content">
@@ -476,7 +395,7 @@
           </p>
           <ul class="contacts__phone-list list-reset phone-list">
             <li class="contacts__phone-item phone-list__item">
-              <a href="tel:+73452681848" class="phone-list__link">
+              <a href="tel:+73452681848" class="phone-list__link link--gold">
                 <svg class="phone-list__svg" width="20" height="20" viewBox="0 0 25 25" fill="none"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <rect width="25" height="25" fill="url(#pattern4)" />
@@ -492,7 +411,7 @@
               </a>
             </li>
             <li class="contacts__phone-item phone-list__item">
-              <a href="tel:+79199412144" class="phone-list__link">
+              <a href="tel:+79199412144" class="phone-list__link link--gold">
                 <svg class="phone-list__svg" width="20" height="20" viewBox="0 0 25 25" fill="none"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <rect width="25" height="25" fill="url(#pattern4)" />
@@ -512,14 +431,14 @@
             Пн-Пт: 9.00&nbsp;&mdash; 20.00&nbsp;ч.
           </span>
             <span class="contacts__time">
-            Сб: 9.00&nbsp;&mdash; 15.00&nbsp;ч.
+            Сб: 9.00&nbsp;&mdash; 20.00&nbsp;ч.
           </span>
           <span class="contacts__time contacts__time--last">
             Вс: выходной
           </span>
           <ul class="contacts__social-list list-reset social-list">
             <li class="social-list__item">
-              <a href=" https://t.me/+79199412144" target="_blank" aria-label="Telegram">
+              <a class="social-list__link link--gold" href="https://t.me/+79199412144" target="_blank" aria-label="Telegram">
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <rect width="25" height="25" fill="url(#pattern1)" />
@@ -534,7 +453,7 @@
               </a>
             </li>
             <li class="social-list__item">
-              <a href="https://viber.click/79199412144" target="_blank" aria-label="Viber">
+              <a class="social-list__link link--gold" href="https://viber.click/79199412144" target="_blank" aria-label="Viber">
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <rect width="25" height="25" fill="url(#pattern2)" />
@@ -549,7 +468,7 @@
               </a>
             </li>
             <li class="social-list__item">
-              <a href="#" target="_blank" aria-label="Вконтакте">
+              <a class="social-list__link link--gold" href="#" target="_blank" aria-label="Вконтакте">
                 <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink">
                   <rect width="25" height="25" fill="url(#pattern3)" />
@@ -570,7 +489,7 @@
   </div>
 </section>
 
-      <section class="reviews">
+      <section class="reviews" id="reviews">
   <div class="container reviews__container">
     <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__rating">
@@ -621,7 +540,7 @@
       <div class="reviews__right">
         <ul class="reviews__list list-reset link-list">
           <li class="link-list__item">
-            <a href="" target="_blank" class="link-list__link">
+            <a href="https://yandex.ru/maps/org/adonis/26777747842/reviews" target="_blank" class="link-list__link">
               <svg version="1.1" id="Yandex_Logo" width="247" height="82" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 367 106"
                 style="enable-background:new 0 0 367 106;" xml:space="preserve">
@@ -644,7 +563,7 @@
             </a>
           </li>
           <li class="link-list__item">
-            <a href="" target="_blank" class="link-list__link">
+            <a href="https://2gis.ru/tyumen/firm/70000001028002244/tab/reviews" target="_blank" class="link-list__link">
               <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="244" height="70"
                 version="1.1"
                 style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
@@ -686,7 +605,7 @@
             </a>
           </li>
           <li class="link-list__item">
-            <a href="" target="_blank" class="link-list__link">
+            <a href="https://prodoctorov.ru/tyumen/lpu/63508-adonis/otzivi" target="_blank" class="link-list__link">
                 <svg width="377" height="44" viewBox="0 0 210 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.7602 10.3689H3.74488V23.9426H0V6.89344H15.5051V23.9426H11.7602V10.3689Z" fill="#FF4A37"/>
                   <path d="M19.1493 6.89344H22.8942V8.76229C23.6607 8.04098 24.4819 7.48361 25.3579 7.09016C26.2339 6.69672 27.2194 6.5 28.3144 6.5C29.5408 6.5 30.6687 6.72951 31.698 7.18852C32.7492 7.62568 33.647 8.24863 34.3916 9.05738C35.1362 9.84426 35.7166 10.7842 36.1327 11.877C36.5488 12.9481 36.7568 14.1175 36.7568 15.3852C36.7568 16.6967 36.5269 17.8989 36.067 18.9918C35.629 20.0628 35.0267 20.9918 34.2602 21.7787C33.4938 22.5437 32.574 23.1448 31.5009 23.582C30.4497 24.0191 29.3218 24.2377 28.1173 24.2377C27.0442 24.2377 26.0806 24.0738 25.2265 23.7459C24.3724 23.418 23.595 22.959 22.8942 22.3689V30.5H19.1493V6.89344ZM27.5589 20.7623C28.3035 20.7623 28.9933 20.6421 29.6284 20.4016C30.2854 20.1612 30.8548 19.8115 31.3366 19.3525C31.8184 18.8716 32.1907 18.3033 32.4535 17.6475C32.7382 16.9699 32.8806 16.2049 32.8806 15.3525C32.8806 14.5656 32.7601 13.8443 32.5192 13.1885C32.2783 12.5109 31.9279 11.9426 31.468 11.4836C31.03 11.0027 30.5044 10.6311 29.8912 10.3689C29.278 10.1066 28.5991 9.97541 27.8545 9.97541C26.7157 9.97541 25.7083 10.2486 24.8323 10.7951C23.9782 11.3415 23.3322 11.9973 22.8942 12.7623V17.9426C23.3322 18.8607 23.9563 19.5601 24.7666 20.041C25.5769 20.5219 26.5077 20.7623 27.5589 20.7623Z" fill="#FF4A37"/>
@@ -703,7 +622,7 @@
             </a>
           </li>
           <li class="link-list__item">
-            <a href="" target="_blank" class="link-list__link">
+            <a href="https://maps.app.goo.gl/C8T1V5rTMPgemoJP8" target="_blank" class="link-list__link">
               <svg xmlns="http://www.w3.org/2000/svg" width="210" height="80" viewBox="-40.446 -22.19 350.532 133.14"><path d="M115.39 46.71c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.86 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z" fill="#EA4335"/><path d="M163.39 46.71c0 12.77-9.99 22.18-22.25 22.18s-22.25-9.41-22.25-22.18c0-12.85 9.99-22.18 22.25-22.18s22.25 9.32 22.25 22.18zm-9.74 0c0-7.98-5.79-13.44-12.51-13.44s-12.51 5.46-12.51 13.44c0 7.9 5.79 13.44 12.51 13.44s12.51-5.55 12.51-13.44z" fill="#FBBC05"/><path d="M209.39 25.87v39.82c0 16.38-9.66 23.07-21.08 23.07-10.75 0-17.22-7.19-19.66-13.07l8.48-3.53c1.51 3.61 5.21 7.87 11.17 7.87 7.31 0 11.84-4.51 11.84-13v-3.19h-.34c-2.18 2.69-6.38 5.04-11.68 5.04-11.09 0-21.25-9.66-21.25-22.09 0-12.52 10.16-22.26 21.25-22.26 5.29 0 9.49 2.35 11.68 4.96h.34v-3.61h9.25zm-8.56 20.92c0-7.81-5.21-13.52-11.84-13.52-6.72 0-12.35 5.71-12.35 13.52 0 7.73 5.63 13.36 12.35 13.36 6.63 0 11.84-5.63 11.84-13.36z" fill="#4285F4"/><path d="M224.64 2.53v65h-9.5v-65z" fill="#34A853"/><path d="M261.66 54.01l7.56 5.04c-2.44 3.61-8.32 9.83-18.48 9.83-12.6 0-22.01-9.74-22.01-22.18 0-13.19 9.49-22.18 20.92-22.18 11.51 0 17.14 9.16 18.98 14.11l1.01 2.52-29.65 12.28c2.27 4.45 5.8 6.72 10.75 6.72 4.96 0 8.4-2.44 10.92-6.14zm-23.27-7.98l19.82-8.23c-1.09-2.77-4.37-4.7-8.23-4.7-4.95 0-11.84 4.37-11.59 12.93z" fill="#EA4335"/><path d="M34.93 40.94v-9.41h31.71c.31 1.64.47 3.58.47 5.68 0 7.06-1.93 15.79-8.15 22.01-6.05 6.3-13.78 9.66-24.02 9.66C15.96 68.88 0 53.42 0 34.44 0 15.46 15.96 0 34.94 0c10.5 0 17.98 4.12 23.6 9.49l-6.64 6.64c-4.03-3.78-9.49-6.72-16.97-6.72-13.86 0-24.7 11.17-24.7 25.03 0 13.86 10.84 25.03 24.7 25.03 8.99 0 14.11-3.61 17.39-6.89 2.66-2.66 4.41-6.46 5.1-11.65z" fill="#4285F4"/></svg>
             </a>
           </li>
@@ -713,7 +632,7 @@
 </section>
 
 
-      <section class="documents">
+      <section class="documents" id="documents">
   <div class="documents__container container">
     <h2 class="documents__title">Документы</h2>
     <ul class="documents__img-list list-reset">
@@ -741,7 +660,7 @@
     </ul>
     <ul class="documents__text-list list-reset">
       <li class="documents__text-item">
-        <a href="#" class="documents__link">
+        <a href="files/tpgg_2019-2021.pdf" class="documents__link" target="_blank">
           <p class="documents__text">
             Сведения о&nbsp;порядке и&nbsp;условиях предоставления медицинской помощи в&nbsp;соответствии
             с&nbsp;территориальной программой государственных гарантий предоставления бесплатной медицинской помощи
@@ -749,7 +668,7 @@
         </a>
       </li>
       <li class="documents__text-item">
-        <a href="#" class="documents__link">
+        <a href="#" class="documents__link" target="_blank">
           <p class="documents__text">
             Федеральный закон об&nbsp;основах охраны здоровья граждан в&nbsp;Российской Федерации &#8470;&nbsp;323-ФЗ
             от&nbsp;21.11.2011г.
@@ -757,7 +676,7 @@
         </a>
       </li>
       <li class="documents__text-item">
-        <a href="#" class="documents__link">
+        <a href="#" class="documents__link" target="_blank">
           <p class="documents__text">
             Правила предоставления медицинскими организациями платных медицинских услуг, утвержденные постановлением
             правительства&nbsp;РФ от&nbsp;04.10.2012г &#8470;&nbsp;1006
@@ -765,7 +684,7 @@
         </a>
       </li>
       <li class="documents__text-item">
-        <a href="#" class="documents__link">
+        <a href="files/federalnayaprogrammabesplpom1506-10-12-18.pdf" class="documents__link" target="_blank">
           <p class="documents__text">
             Постановление от&nbsp;10&nbsp;декабря 2018&nbsp;г. &#8470;&nbsp;1506&nbsp;О программе государственных
             гарантий бесплатного оказания гражданам медицинской помощи на&nbsp;2019 год и&nbsp;на&nbsp;плановый период
@@ -778,7 +697,7 @@
 </section>
 
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
   <div class="container footer__container">
     <img class="footer__logo" src="img/logo-contacts.svg" width="240" height="58" alt="Логотип нашей стоматологической клиники">
     <h2 class="footer__title">
@@ -839,26 +758,26 @@
     </ul>
     <ul class="footer__list-organs list-reset">
       <li class="footer__list-organs-item">
-        <a href="" class="footer__list-organs-text">
+        <a href="" class="footer__list-organs-text link--gold">
           Федеральная служба по&nbsp;надзору в&nbsp;сфере здравоохранения
         </a>
-        <a href="tel:+78005001835" class="footer__list-organs-phone">
+        <a href="tel:+78005001835" class="footer__list-organs-phone link--gold">
           8&nbsp;800&nbsp;500&nbsp;18&nbsp;35
         </a>
       </li>
       <li class="footer__list-organs-item">
-        <a href="" class="footer__list-organs-text">
+        <a href="" class="footer__list-organs-text link--gold">
           Департамент здравоохранения по&nbsp;Тюменской обл.
         </a>
-        <a href="tel:+78002503091" class="footer__list-organs-phone">
+        <a href="tel:+78002503091" class="footer__list-organs-phone link--gold">
           8&nbsp;800&nbsp;250&nbsp;30&nbsp;91
         </a>
       </li>
       <li class="footer__list-organs-item">
-        <a href="" class="footer__list-organs-text">
+        <a href="" class="footer__list-organs-text link--gold">
           Отдел лицензирование медицинской и&nbsp;фармацевтической деятельности
         </a>
-        <a href="tel:+73452557817" class="footer__list-organs-phone">
+        <a href="tel:+73452557817" class="footer__list-organs-phone link--gold">
           8 (3452) 55&nbsp;78&nbsp;17
         </a>
       </li>
@@ -866,7 +785,7 @@
     <div class="footer__bottom">
       <ul class="footer__list-social list-reset social-list">
         <li class="social-list__item">
-          <a href=" https://t.me/+79199412144" target="_blank" aria-label="Telegram">
+          <a class="social-list__link link--gold" href="https://t.me/+79199412144" target="_blank" aria-label="Telegram">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="25" height="25" fill="url(#pattern1)" />
@@ -881,7 +800,7 @@
           </a>
         </li>
         <li class="social-list__item">
-          <a href="https://viber.click/79199412144" target="_blank" aria-label="Viber">
+          <a class="social-list__link link--gold" href="https://viber.click/79199412144" target="_blank" aria-label="Viber">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="25" height="25" fill="url(#pattern2)" />
@@ -896,7 +815,7 @@
           </a>
         </li>
         <li class="social-list__item">
-          <a href="#" target="_blank" aria-label="Вконтакте">
+          <a class="social-list__link link--gold" href="#" target="_blank" aria-label="Вконтакте">
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="25" height="25" fill="url(#pattern3)" />
